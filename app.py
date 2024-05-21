@@ -8,14 +8,6 @@ def level_1_prompting():
   genre_options = ("Science Fiction", "Fantasy", "Mystery")
   genre = st.radio("Genre:", genre_options)
   prompt = f"Write a short story in the {genre} genre."
-  response = openai.Completion.create(
-      engine="text-davinci-003",
-      prompt=prompt,
-      max_tokens=150,
-      n=1,
-      stop=None,
-      temperature=0.7,
-  )
   return response.choices[0].text.strip()
 
 def main():
