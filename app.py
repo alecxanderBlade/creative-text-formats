@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = "sk-proj-yIS1AvxcDI03LrYOFkcIT3BlbkFJFOccAOBNohDUZV9OOoRM"
+openai.api_key = "sk-proj-FU8H0vvNaf0HowWjKllLT3BlbkFJXdU8cFxIBXh8JmtKdz9U"
 
 def level_1_prompting():
   st.header("Level 1: Choose a Genre")
